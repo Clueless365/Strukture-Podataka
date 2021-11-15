@@ -1,7 +1,3 @@
 ﻿  funkcije.c
 C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 4\zdtk 4\funkcije.c(18,22): warning C4047: 'return': 'pos' differs in levels of indirection from 'int'
-C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 4\zdtk 4\funkcije.c(42,22): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
-C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 4\zdtk 4\funkcije.c(42,38): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
-  Source.c
-  Generating Code...
   zdtk 4.vcxproj -> C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 4\Debug\zdtk 4.exe

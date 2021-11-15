@@ -24,12 +24,13 @@ int FetchData(FILE* fp, pos head1, pos head2)
 {
 	char buffer[MAX] = { 0 };
 	char* NewBuffer; //"dinamicki" string
-	char c1, c2 = 'a';
+	//char c1, c2 = 'a'; ovi su bili za provjeru trash-a
 	int coeff = 0;
 	int expo = 0;
 	int i = 0;
 	int n = 0;
 	int counter = 0;
+	int check = 0;
 
 	while (!feof(fp)) //mogli bi i samo 2 iteracije jer je poznat br polinoma
 	{
@@ -38,19 +39,26 @@ int FetchData(FILE* fp, pos head1, pos head2)
 
 		while (strlen(NewBuffer) != 0)
 		{
-			sscanf(NewBuffer, " %d%c%d%c%n", &coeff, &c1, &expo, &c2, &n);
-			if (coeff == NULL || expo == NULL || c1 != ' ' || c2 != ' ')//nije 100% sig. al nez bolje
+			check = sscanf(NewBuffer, " %d %d %n", &coeff, &expo, &n);
+			if(check!= 2)
+			{
+				perror("Ne valja datoteka!\n");
+				return EXIT_FAILURE;
+			}
+			//los nacin provjere trasha
+			/*sscanf(NewBuffer, " %d%c%d%c%n", &coeff, &c1, &expo, &c2, &n);
+			if (coeff == NULL || expo == NULL || c1 != ' ' || c2 != ' ')//nije 100% sig.
 			{//provjera trash-a
 				perror("Ne valja datoteka!");
 				return EXIT_FAILURE;
-			}
+			}*/
 
 			if (counter == 0)
 				SortedInsertionDescending(head1, coeff, expo);//sortirani upis 1. pol
 			else
 				SortedInsertionDescending(head2, coeff, expo);
 
-			NewBuffer += n;//mice pocetak stringa do 1. inta(ako smece nije buggalo)
+			NewBuffer += n;//mice pocetak stringa do 1. inta
 		}
 		counter++;
 	}

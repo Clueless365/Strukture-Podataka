@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\zdtk 4",
-    "\\zdtk 4\\zdtk 4"
+    "\\zdtk 4\\zdtk 4",
+    "\\zdtk 5",
+    "\\zdtk 5\\zdtk 5"
   ],
-  "SelectedNode": "\\zdtk 4\\zdtk 4\\polinomi.txt",
+  "SelectedNode": "\\zdtk 5\\zdtk 5\\Source.c",
   "PreviewInSolutionExplorer": false
 }
