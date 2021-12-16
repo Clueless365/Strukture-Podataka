@@ -54,6 +54,8 @@ int main()
 
 	return 0;
 }
+
+
 pos createDir(pos NewDir, char* name)
 {
 	NewDir = (pos)malloc(sizeof(tree));
@@ -190,7 +192,7 @@ pos cdBack(pos current, Spos head)
 
 int dir(pos current)
 {
-	printf("\==============================\n");
+	printf("==============================\n");
 	pos temp = NULL;
 	if (current->child == NULL) {
 		printf("==============================\n");
@@ -235,8 +237,9 @@ int deleteLastStackEl(Spos head)
 	return EXIT_SUCCESS;
 }
 
-int menu(pos current, Spos head)
+int menu(pos root, Spos head)
 {
+	pos current = root;
 	Spos temp = head;
 	char name[MAX_LINE] = { 0 };
 	char command[MAX_LINE] = { 0 };
@@ -265,7 +268,6 @@ int menu(pos current, Spos head)
 		}
 		else if (!strcmp(command, "cd.."))
 		{
-			//ne smi izac iz C:
 			current = cdBack(current, temp);
 			displayLocation(temp);
 			printf(" ");
