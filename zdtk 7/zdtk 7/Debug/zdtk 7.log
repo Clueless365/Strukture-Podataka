@@ -1,3 +1,6 @@
 ﻿  Source.c
-C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 7\zdtk 7\Source.c(211,9): warning C4129: '=': unrecognized character escape sequence
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 7\zdtk 7\Source.c(64,22): warning C4047: 'return': 'pos' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 7\zdtk 7\Source.c(81,22): warning C4047: 'return': 'pos' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 7\zdtk 7\Source.c(97,22): warning C4047: 'return': 'Spos' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 7\zdtk 7\Source.c(232,22): warning C4047: 'return': 'Spos' differs in levels of indirection from 'int'
   zdtk 7.vcxproj -> C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 7\Debug\zdtk 7.exe

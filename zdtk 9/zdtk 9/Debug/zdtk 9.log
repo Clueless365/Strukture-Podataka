@@ -1,0 +1,5 @@
+﻿  Source.c
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 9\zdtk 9\Source.c(60,18): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 9\zdtk 9\Source.c(161,22): warning C4047: 'return': 'pos' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 9\zdtk 9\Source.c(178,22): warning C4047: 'return': 'Spos' differs in levels of indirection from 'int'
+  zdtk 9.vcxproj -> C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 9\Debug\zdtk 9.exe

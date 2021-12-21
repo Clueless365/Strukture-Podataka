@@ -15,7 +15,7 @@ typedef struct MyStruct
 	pos child;
 }tree;
 //tree predstavlja direktorije, root je C: direktorij,
-//svaki direktorij ima jednog childa, osim ako je na dnu stabla onda je NULL,
+//svaki direktorij ima jednog childa, osim ako je na dnu stabla onda je NULL
 //te svaki direktorij ima parenta osim root-a, a sibling funkcioniraju kao stack
 //prvi napravljeni direktorij nema siblinga,  a sljedeci ce pokazivat na prvog 
 //treci na drugog i tako dalje dok se ne napravi novi level i onda ispocetka
@@ -59,6 +59,10 @@ int main()
 pos createDir(pos NewDir, char* name)
 {
 	NewDir = (pos)malloc(sizeof(tree));
+	if (NewDir == NULL) {
+		perror("Malloc greska!");
+		return EXIT_FAILURE;
+	}
 	strcpy(NewDir->name, name);
 	NewDir->parent = NULL;
 	NewDir->sibling = NULL;
@@ -72,6 +76,10 @@ pos makeRootDir()
 {
 	pos NewDir = NULL;
 	NewDir = (pos)malloc(sizeof(tree));
+	if (NewDir == NULL) {
+		perror("Malloc greska!");
+		return EXIT_FAILURE;
+	}
 
 	strcpy(NewDir->name, "C:/");
 	NewDir->parent = NULL;
@@ -84,6 +92,10 @@ Spos createStackEl(char* name)
 {
 	Spos NewEl = NULL;
 	NewEl = (Spos)malloc(sizeof(stack));
+	if (NewEl == NULL) {
+		perror("Malloc greska!");
+		return EXIT_FAILURE;
+	}
 
 	strcpy(NewEl->Sname, "/");
 	strcat(NewEl->Sname, name);
@@ -115,7 +127,7 @@ int md(char* name, pos current)
 
 		return EXIT_SUCCESS;
 	}
-	if (temp->child != NULL) {
+	else if (temp->child != NULL) {
 		NewDir = createDir(NewDir, name);
 		NewDir->sibling = temp->child;
 		//temp->child->parent = NULL;
@@ -137,7 +149,7 @@ pos cd(char* name, pos current, Spos head)
 		return current;
 	}
 
-	if (strcmp(current->child->name, name) == 0) {
+	else if (strcmp(current->child->name, name) == 0) {
 		current = current->child;
 
 		last = findLastStackEl(head);
@@ -215,6 +227,10 @@ Spos createHeadStackEl()
 {
 	Spos NewEl = NULL;
 	NewEl = (Spos)malloc(sizeof(stack));
+	if (NewEl == NULL) {
+		perror("Malloc greska!");
+		return EXIT_FAILURE;
+	}
 
 	strcpy(NewEl->Sname, ">C:/");
 	NewEl->next = NULL;
