@@ -1,0 +1,5 @@
+Quebec 8500000
+Vancouver 675000
+Halifax 403000
+Montreal 1780000
+Banff 7800
