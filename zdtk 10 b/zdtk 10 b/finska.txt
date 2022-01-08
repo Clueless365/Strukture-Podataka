@@ -1,0 +1,8 @@
+Lapua 15000
+Helsinki 650000
+Espoo 280000
+Nokia 30000
+Tampere 230000
+Turku 180000
+Kemi 21000
+Vaasa 67400

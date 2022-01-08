@@ -1,0 +1,8 @@
+﻿  Source.c
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 10 b\zdtk 10 b\Source.c(139,22): warning C4047: 'return': 'posTree' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 10 b\zdtk 10 b\Source.c(167,22): warning C4047: 'return': 'posTree' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 10 b\zdtk 10 b\Source.c(177,23): warning C4047: 'return': 'posTree' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 10 b\zdtk 10 b\Source.c(219,22): warning C4047: 'return': 'posList' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 10 b\zdtk 10 b\Source.c(228,23): warning C4047: 'return': 'posList' differs in levels of indirection from 'int'
+C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 10 b\zdtk 10 b\Source.c(265,22): warning C4047: 'return': 'posList' differs in levels of indirection from 'int'
+  zdtk 10 b.vcxproj -> C:\Users\Mate\Documents\FESB 2.god\Za upload\zdtk 10 b\Debug\zdtk 10 b.exe

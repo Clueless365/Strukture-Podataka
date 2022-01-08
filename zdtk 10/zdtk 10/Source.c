@@ -40,7 +40,6 @@ int main() {
 
 	//a
 	//koristen reference kod
-	int bzv = 0;
 
 	posList head = NULL;
 

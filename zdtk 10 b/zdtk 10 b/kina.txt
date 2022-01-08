@@ -1,0 +1,7 @@
+Shenzhen 10000000
+Guangzhou 11000000
+Shanghai 20000000
+Xian 400000
+Beijing 16000000
+Zibo 2000000
+Nanjing 5000000
