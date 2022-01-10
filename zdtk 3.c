@@ -4,7 +4,7 @@
 #include <string.h>
 #define MAX 50
 
-//kod je malo broken, dodatno cu ga ispraviti poslije
+
 
 
 struct _person;
