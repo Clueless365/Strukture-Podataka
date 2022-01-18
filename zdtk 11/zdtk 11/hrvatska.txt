@@ -1,0 +1,12 @@
+Split 150000
+Osijek 90000
+Sevid 500
+Zadar 80000
+Rijeka 60000
+Zagreb 500000
+Sutivan 800
+Solin 15000
+Vinisce 1500
+Pula 50000
+Omis 15000
+Celine 1000
